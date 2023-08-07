@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body class="main-content">
     <header class="container header active" id="home">
@@ -31,17 +32,13 @@
             <img src="img/hero.jpg" alt="" />
           </div>
         </div>
-        <div class="right-header">
+        <div class="right-header" id="intro">
           <h1 class="name">
             Hi, I'm <span>Mohammad Taghizadeh</span>
             A Python Developer
           </h1>
           <p>
-            Programming experience since 2017 with different programming
-            languages ​​and of course interested in Python, back-end development
-            and artificial intelligence. I am currently a master's student in
-            software engineering at University of Guilan, and I am working on my
-            thesis in the field of NLP and Cognitive Science.
+            Programming experience since 2017 with different programming languages ​​and of course interested in Python, back-end development and artificial intelligence. I am currently a master's student in software engineering at University of Guilan, and I am working on my thesis in the field of NLP and Cognitive Science.
           </p>
           <video style="width: 100%" src="videos/Intro.mp4" controls></video>
 
@@ -72,10 +69,9 @@
           <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
         </div>
         <div class="about-container">
-          <div class="left-about">
+          <div class="left-about" id="about-me">
             <h4>Information About me</h4>
-            <p>
-              My goal and intention is to broadcast the knowledge of programming
+            <p>My goal and intention is to broadcast the knowledge of programming
               for the growth of the community of Persian programmers, and in
               this regard, I have taught programming directly and indirectly to
               several thousand students.
@@ -110,36 +106,28 @@
             <div class="about-item">
               <div class="abt-text">
                 <p class="large-text">30,000+</p>
-                <p class="small-text">
-                  Programming <br />
-                  Students
+                <p class="small-text">Programming <br />Students
                 </p>
               </div>
             </div>
             <div class="about-item">
               <div class="abt-text">
                 <p class="large-text">7+</p>
-                <p class="small-text">
-                  Years of <br />
-                  Experience
+                <p class="small-text">Years of <br />Experience
                 </p>
               </div>
             </div>
             <div class="about-item">
               <div class="abt-text">
                 <p class="large-text">140+</p>
-                <p class="small-text">
-                  Videos <br />
-                  on YouTube
+                <p class="small-text">Videos <br />on YouTube
                 </p>
               </div>
             </div>
             <div class="about-item">
               <div class="abt-text">
                 <p class="large-text">20+</p>
-                <p class="small-text">
-                  Programming <br />
-                  Courses
+                <p class="small-text">Programming <br />Courses
                 </p>
               </div>
             </div>
@@ -798,6 +786,9 @@
     <div class="theme-btn">
       <i class="fas fa-adjust"></i>
     </div>
+    <!-- <button id="toggle-button" onclick="toggleLanguage()">ترجمه به فارسی</button> -->
+    <div class="translate-btn" id="toggle-button" onclick="toggleLanguage()">Farsi</div>
     <script src="app.js"></script>
+    <script src="translator.js"></script>
   </body>
 </html>
